@@ -8,10 +8,38 @@ function App() {
 
     return (
         <>
-            <div>
+            <header className="intro">
+                <h1>Hi, I'm Ye 👋</h1>
+                <p className="tagline">
+                    CS student @ Baruch • Junior Year
+                </p>
+            </header>
+
+            <main className="card">
+                <h2>About me</h2>
+                <p>
+                    I am an aspiring Software Engineer with a strong 
+                    passion for developing full stack applications with 
+                    seamless user experience.
+                </p>
+
+                <h3>What I'm into</h3>
+                <ul>
+                    <li>Frontend: HTML, CSS, Bootstrap, Javascript</li>
+                    <li>Backend & scripting: Python, Flask, SQL, PHP</li>
+                </ul>
+
+                <button onClick={() => setCount((c) => c + 1)}>
+                    👋 Say hi ({count})
+                </button>
+            </main>
+
+            <footer className="read-the-docs">
+                Powered by{" "}
                 <a href="https://vite.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
+                </a>{" "}
+                &{" "}
                 <a href="https://react.dev" target="_blank">
                     <img
                         src={reactLogo}
@@ -19,19 +47,7 @@ function App() {
                         alt="React logo"
                     />
                 </a>
-            </div>
-            <h1>Zach</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            </footer>
         </>
     );
 }
