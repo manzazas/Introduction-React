@@ -1,0 +1,59 @@
+/* Simple App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color:white;
+  background: #030303;
+background: radial-gradient(circle, rgba(3, 3, 3, 1) 0%, rgba(18, 26, 97, 1) 64%, rgba(0, 0, 0, 1) 100%);
+}
+.app {
+  min-height: 100vh;
+}
+
+/* Simple navigation */
+nav {
+  background: #333;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* Basic content styling */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Simple button */
+.btn {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
